@@ -7,9 +7,6 @@
 #include <linux/compiler.h>
 #include <linux/fs.h>
 #include <linux/iomap.h>
-#include <linux/blkdev.h>
-
-#include "iomap_internal.h"
 
 /*
  * Execute a iomap write on a segment of the mapping that spans a
@@ -74,10 +71,4 @@ iomap_apply(struct inode *inode, loff_t pos, loff_t length, unsigned flags,
 	}
 
 	return written ? written : ret;
-}
-
-sector_t
-iomap_sector(struct iomap *iomap, loff_t pos)
-{
-	return (iomap->addr + pos - iomap->offset) >> SECTOR_SHIFT;
 }

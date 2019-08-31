@@ -1,14 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (c) 2016-2018 Christoph Hellwig.
  */
 #include <linux/module.h>
 #include <linux/compiler.h>
 #include <linux/fs.h>
 #include <linux/iomap.h>
-
-#include "iomap_internal.h"
 
 struct fiemap_ctx {
 	struct fiemap_extent_info *fi;

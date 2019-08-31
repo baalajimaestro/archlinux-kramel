@@ -11,8 +11,7 @@
 #include <linux/uio.h>
 #include <linux/task_io_accounting_ops.h>
 
-#include "internal.h"
-#include "iomap_internal.h"
+#include "../internal.h"
 
 /*
  * Private flags for iomap_dio, must not overlap with the public ones in

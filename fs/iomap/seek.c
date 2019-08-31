@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2010 Red Hat, Inc.
- * Copyright (c) 2016-2018 Christoph Hellwig.
+ * Copyright (C) 2017 Red Hat, Inc.
+ * Copyright (c) 2018 Christoph Hellwig.
  */
 #include <linux/module.h>
 #include <linux/compiler.h>
@@ -9,8 +9,6 @@
 #include <linux/iomap.h>
 #include <linux/pagemap.h>
 #include <linux/pagevec.h>
-
-#include "iomap_internal.h"
 
 /*
  * Seek for SEEK_DATA / SEEK_HOLE within @page, starting at @lastoff.

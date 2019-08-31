@@ -1,15 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2010 Red Hat, Inc.
- * Copyright (c) 2016-2018 Christoph Hellwig.
+ * Copyright (C) 2018 Oracle.  All Rights Reserved.
+ * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 #include <linux/module.h>
 #include <linux/compiler.h>
 #include <linux/fs.h>
 #include <linux/iomap.h>
 #include <linux/swap.h>
-
-#include "iomap_internal.h"
 
 /* Swapfile activation */
 
