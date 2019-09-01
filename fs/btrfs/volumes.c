@@ -5317,8 +5317,6 @@ static noinline int init_first_rw_device(struct btrfs_trans_handle *trans)
 
 static inline int btrfs_chunk_max_errors(struct map_lookup *map)
 {
-<<<<<<< HEAD
-
 	const int index = btrfs_bg_flags_to_raid_index(map->type);
 	int max_errors;
 
@@ -5331,9 +5329,6 @@ static inline int btrfs_chunk_max_errors(struct map_lookup *map)
 	} else {
 		max_errors = 0;
 	}
-=======
-	const int index = btrfs_bg_flags_to_raid_index(map->type);
->>>>>>> 840501de674c9d9fe3c1a93ff2adef8063b731c5
 
 	return btrfs_raid_array[index].tolerated_failures;
 }
