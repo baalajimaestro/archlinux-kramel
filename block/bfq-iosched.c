@@ -2576,6 +2576,7 @@ static void bfq_requests_merged(struct request_queue *q, struct request *rq,
 	bfq_log_bfqq(bfqq->bfqd, bfqq,
 		     "rq %p next %p bfqq %p next_bfqq %p",
 		     rq, next, bfqq, next_bfqq);
+
 	/*
 	 * If next and rq belong to the same bfq_queue and next is older
 	 * than rq, then reposition rq in the fifo (by substituting next
